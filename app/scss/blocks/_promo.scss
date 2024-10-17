@@ -1,0 +1,110 @@
+.promo {
+    position: relative;
+    width: 100%;
+    min-height: 550px;
+    padding-top: 187px;
+    background: rgba(238, 250, 255, 0.644);
+    &__wrapper {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 550px;
+    }
+
+    &__items {
+        position: relative;
+        z-index: 4;
+    }
+
+    &__title {
+        max-width: 530px;
+        width: 100%;
+        margin-top: 100px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 146%;
+        span {
+            color: var(--blue-color);
+        }
+    }
+
+    &__text {
+        max-width: 460px;
+        width: 100%;
+        min-height: 58px;
+        margin-top: 21px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 214%;
+        color: var(--grey-color);
+    }
+
+    &__find {
+        display: flex;
+        align-items: center;
+        max-width: 566px;
+        width: 100%;
+        height: 86px;
+        margin-top: 50px;
+        background-color: var(--white-color);
+        padding: 13px;
+        border-radius: 10px;
+    }
+
+    &__input {
+        width: 100%;
+        height: 59px;
+        border: none;
+        border-radius: 8px;
+        background-color: rgba(245, 246, 250, 0.52);
+    }
+
+    .name {
+        width: 100%;
+        margin-right: 19px;
+        padding: 18px 0 18px 30px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        color: var(--grey-color);
+        &:focus {
+            outline: rgba(245, 246, 250, 0.52);
+            border: 1px solid rgba(182, 184, 190, 0.692);
+        }
+    }
+    .location {
+        width: 100%;
+        padding: 18px 0 18px 30px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        color: var(--grey-color);
+        &:focus {
+            outline: rgba(245, 246, 250, 0.52);
+            border: 1px solid rgba(182, 184, 190, 0.692);
+        }
+    }
+    .submit {
+        width: 35%;
+        margin-left: 31px;
+        background: url(..//..//img/icons/search.png) center center / 50% no-repeat;
+        background-color: var(--blue-color);
+        font-size: 0;
+        &:hover {
+            background-color: var(--hover-color);
+            transition: all .3s;
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        height: 100%;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
