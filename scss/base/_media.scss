@@ -277,6 +277,13 @@
         &__subscribe {
             margin-top: 45px;
         }
+
+        &__policy {
+            flex-direction: column-reverse;
+            &-items {
+                margin: 5px 0 20px 0;
+            }
+        }
     }
 }
 
