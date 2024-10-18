@@ -1,0 +1,70 @@
+//Import Libs
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/bootstrap-grid.min';
+@import 'libs/fonts';
+
+//Styles
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-display: swap;
+}
+
+hr, h1, h2, h3, h4, h5, h5, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.btn {
+    width: 142px;
+    min-height: 47px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 147%;
+    color: var(--white-color);
+    text-align: center;
+    background-color: var(--blue-color);
+    transition: .3s all;
+    cursor: pointer;
+    &:hover {
+        background-color: var(--hover-color);
+        transition: .3s all;
+    }
+}
+
+body {
+    background-color: rgba(238, 250, 255, 0.644);
+}
+
+body.active {
+    overflow: hidden;
+}
+    
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+//Import Blocks
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/steps';
+@import 'blocks/quality';
+@import 'blocks/service';
+@import 'blocks/doctors';
+@import 'blocks/mobile';
+@import 'blocks/slider';
+@import 'blocks/appoiment';
+@import 'blocks/footer';
+@import 'blocks/burger';
+
+//Import Base
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/media';
