@@ -207,7 +207,7 @@
 
         &__items {
             margin-top: 45px;
-            grid-template-rows: repeat(1, 300px);
+            grid-template-columns: repeat(2, 1fr);
         }
 
         &__item {
@@ -264,56 +264,18 @@
     }
 
     .footer {
-        &__logo {
-            font-size: 25px;
-        }
+        min-height: 740px;
 
-        &__location {
-            font-size: 9px;
-        }
-
-        &__phone {
-            font-size: 9px;
-        }
-
-        &__social {
-            &-img {
-                max-width: 25px;
-                height: 25px;
-                margin-right: 8px;
-            }
-        }
-
-        &__title {
-            font-size: 12px;
+        &__wrapper {
+            flex-direction: column;
         }
 
         &__menu {
-            &-link {
-                font-size: 10px;
-            }
+            margin-top: 45px;
         }
 
-        &__text {
-            font-size: 10px;
-        }
-
-        &__form {
-            &-input {
-                height: 30px;   
-            }
-            &-btn {
-                min-height: 30px;
-            }
-        }
-
-        &__policy {
-            &-copyrait {
-                font-size: 9px;
-            }
-            &-item {
-                font-size: 10px;
-            }
+        &__subscribe {
+            margin-top: 45px;
         }
     }
 }
@@ -436,7 +398,7 @@
         }
 
         &__items {
-            grid-template-rows: repeat(1, 220px);
+            grid-template-columns: repeat(1, 1fr);
         }
 
         &__item {

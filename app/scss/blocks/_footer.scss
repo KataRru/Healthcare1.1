@@ -1,29 +1,29 @@
 .footer {
-    margin-top: 70px;
-    background-color: var(--white-color);
     position: relative;
-    &::after {
+    margin-top: 108px;
+    padding: 25px 0 10px 0;
+    width: 100%;
+    min-height: 350px;
+    background-color: var(--white-color);
+    &:after {
         content: '';
         display: block;
-        position: absolute;
-        bottom: 20px;
         width: 100%;
         height: 1px;
-        background-color: var(--gray-color);
+        background-color: #e1e2e4;
+        position: absolute;
+        bottom: 20px;
     }
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        width: 100%;
-        height: 305px;
-        background-color: var(--white-color);
     }
 
-    &__contacts {
+    &__info {
         width: 100%;
         max-width: 320px;
-        margin-top: 34px;
+        min-height: 125px;
     }
 
     &__logo {
@@ -45,15 +45,15 @@
 
     &__location {
         width: 100%;
-        max-width: 320px;
-        margin-top: 20px;
+        margin-top: 12px;
         font-weight: 400;
         font-size: 14px;
         line-height: 180%;
     }
 
-    &__phone {
-        margin-top: 20px;
+    &__number {
+        width: 100%;
+        margin-top: 15px;
         font-weight: 400;
         font-size: 14px;
         line-height: 180%;
@@ -61,46 +61,51 @@
     }
 
     &__social {
-        margin-top: 15px;
         width: 100%;
-        max-width: 205px;
-        &-img {
-            margin-top: 5px;
-            max-width: 32px;
-            height: 32px;
-            margin-right: 15px;
-            &:nth-child(4) {
-                margin-right: 0;
-            }
-        }
+        margin-top: 15px;
+    }
+
+    &__img {
+        margin: 0 5px;
+        width: 100%;
+        max-width: 32px;
     }
 
     &__menu {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 10px;
         display: flex;
-        flex-direction: column;
-        width: 100px;
-        margin: 0 15px;
-        &-link {
-            margin-top: 24px;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 100%;
-        }
+        justify-content: space-between;
+    }
+
+    &__items {
+        width: 100%;
+        max-width: 100px;
+        margin: 0 30px;
     }
 
     &__title {
-        margin-top: 45px;
+        width: 100%;
         font-weight: 700;
         font-size: 15px;
         line-height: 100%;
     }
 
-    &__subscribe {
-        width: 100%;
-        max-width: 292px;
+    &__item {
+        margin: 24px 0 0 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: var(--gray-color);
     }
 
-    &__text {
+    &__subscribe {
+        width: 100%;
+        max-width: 290px;
+    }
+
+    &__subtitle {
         margin-top: 19px;
         width: 100%;
         font-weight: 400;
@@ -110,55 +115,66 @@
     }
 
     &__form {
-        width: 100%;
         margin-top: 15px;
-        &-input {
-            width: 100%;
-            height: 40px;
-            border: 1px solid var(--gray-color);
-            border-radius: 5px;
-            font-weight: 400;
-            font-size: 14px;
-            padding: 0 0 0 20px;
-        }
-        &-btn {
-            margin-top: 12px;
-            width: 100%;
-        }
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input {
+        padding: 0 0 0 20px;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #e1e2e4;
+        border-radius: 5px;
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--gray-color);
+        outline: none;
+    }
+
+    &__btn {
+        margin-top: 12px;
+        width: 100%;
+        min-height: 40px;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.02em;
     }
 
     &__policy {
+        margin: 5px 0 31px 0;
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        margin: 0 0 5px 0;
-        &-copyrait {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 100%;
-            color: var(--gray-color);
-        }
         &-items {
             display: flex;
             justify-content: space-between;
-            width: 100%;
-            max-width: 280px;
         }
         &-item {
-            margin: 0 5px 0 5px;
+            margin: 0 52px 0 0;
             font-weight: 400;
             font-size: 14px;
             line-height: 100%;
-            color: var(--gray-color);
+            &:nth-child(3) {
+                margin: 0;
+            }
         }
     }
 
+    &__copyright {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        color: var(--gray-color);
+    }
+
     &__link {
-        text-decoration: none;
         color: var(--gray-color);
         &:hover {
             color: var(--blue-color);
             transition: all .2s;
         }
     }
-
+    
 }

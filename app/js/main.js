@@ -52,3 +52,8 @@ $(document).ready(() => {
     $('body').removeClass('active');
   });
 });
+
+
+//WOW
+
+new WOW().init();
