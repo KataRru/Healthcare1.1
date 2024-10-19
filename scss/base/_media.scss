@@ -277,12 +277,18 @@
         &__subscribe {
             margin-top: 45px;
         }
+    }
 
-        &__policy {
+    .policy {
+        &__wrapper {
             flex-direction: column-reverse;
             &-items {
                 margin: 5px 0 20px 0;
             }
+        }
+
+        &__copyright {
+            margin-top: 10px;
         }
     }
 }
