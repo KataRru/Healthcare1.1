@@ -100,7 +100,12 @@
             font-size: 25px;
         }
 
+        &__items {
+            flex-direction: column;
+        }
+
         &__item {
+            margin-top: 20px;
             &-title {
                 font-size: 15px;
             }
@@ -313,14 +318,8 @@
             font-size: 18px;
         }
 
-        &__items {
-            flex-direction: column;
-            margin-top: 0;
-        }
-
         &__item {
             width: 200px;
-            margin-top: 20px;
             &-title {
                 font-size: 12px;
             }

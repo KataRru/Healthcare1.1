@@ -1,8 +1,12 @@
 .slider {
-    position: relative;
     margin: 120px 0 0 0;
-    width: 100%;
-    min-height: 500px;
+
+    &__wrapper {
+        width: 100%;
+        min-height: 500px;
+        position: relative;
+    }
+
     &__title {
         width: 100%;
         text-align: center;
@@ -91,6 +95,7 @@
     transform: translateY(50%);
     width: 33px;
     height: 33px;
+    margin-top: 40px;
     border: none;
     border-radius: 5px;
     font-size: 0;
@@ -98,7 +103,7 @@
 }
 
 .slick-prev {
-    left: 20px;
+    left: -50px;
     background: url(..//..//img/icons/slider/left-arrow-blue.png) center 50% no-repeat;
     background-color: #bebebe67;
     &:hover {
@@ -110,7 +115,7 @@
 }
 
 .slick-next {
-    right: 20px;
+    right: -50px;
     background: url(..//..//img/icons/slider/right-arrow-blue.png) center 50% no-repeat;
     background-color: #bebebe67;
     &:hover {

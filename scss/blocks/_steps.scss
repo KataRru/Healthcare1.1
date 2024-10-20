@@ -1,8 +1,11 @@
 .steps {
     width: 100%;
-    min-height: 300px;
     padding-top: 75px;
     background-color: var(--white-color);
+    &__wrapper {
+        width: 100%;
+        min-height: 300px;
+    }
     &__title {
         width: 100%;
         text-align: center;
