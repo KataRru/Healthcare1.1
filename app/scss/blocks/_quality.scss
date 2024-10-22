@@ -1,6 +1,4 @@
 .quality {
-    width: 100%;
-    min-height: 500px;
     margin-top: 100px;
     &__wrapper {
         display: flex;
@@ -22,14 +20,12 @@
     }
 
     &__title {
-        width: 100%;
         font-weight: 500;
         font-size: 42px;
         letter-spacing: 0.02em;
     }
 
     &__text {
-        width: 100%;
         margin-top: 24px;
         font-weight: 400;
         font-size: 18px;
@@ -39,7 +35,6 @@
     }
 
     &__item {
-        width: 100%;
         display: flex;
         align-items: center;
         margin-top: 14px;
